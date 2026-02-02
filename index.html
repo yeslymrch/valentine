@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine?</title>
+
+<style>
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    width: 250px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* hide checkbox */
+#noCheck {
+    display: none;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+/* YES button */
+.yes {
+    display: inline-block;
+    background: #a70d29;
+    color: rgb(255, 255, 255);
+    padding: 15px 35px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+/* NO button */
+.no {
+    background: #000000;
+    padding: 15px 35px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* when NO is clicked → YES becomes HUGE */
+#noCheck:checked ~ .buttons .yes {
+    font-size: 50px;
+    padding: 30px 70px;
+}
+</style>
+</head>
+
+<body>
+
+<img src="images/i-love-u.gif">
+
+<h1 style="color: white;">Will you be my valentine?</h1>
+
+<input type="checkbox" id="noCheck">
+
+<div class="buttons">
+    <a href="yes.html" class="yes">Yes</a>
+    <label for="noCheck" class="no">No</label>
+</div>
+
+</body>
+</html>
